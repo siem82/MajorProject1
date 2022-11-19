@@ -1,3 +1,7 @@
+body{
+    font-family: "Mulish", sans-serif;
+}
+
 .container{
     display: flex;
     justify-content: center;
