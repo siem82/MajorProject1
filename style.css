@@ -3,3 +3,14 @@
     justify-content: center;
     
 }
+
+.hide{
+    display: none;
+}
+
+
+.backbutton:hover + .hide{
+    display: block;
+    color: black;
+
+}
