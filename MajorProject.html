@@ -32,7 +32,7 @@
             border: none;
         }
 
-        .container-fluid{
+        header{
             background-image: url("https://images.pexels.com/photos/6400005/pexels-photo-6400005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
             background-repeat: no-repeat;
             background-size: cover;
@@ -43,8 +43,18 @@
             border: 0;
         }
 
+        .container-fluid{
+
+        }
+
+
 
         @media screen and (max-width: 576px){
+
+                header{
+                    height: 30vh;
+                }
+
                 .texthide{
                     font-size: 0;
                 }
@@ -58,6 +68,10 @@
             @media screen and (min-width: 768px) and (max-width: 1024px){
                 .texthide{
                     font-size: 0;
+                }
+
+                header{
+                    height: 50vh;
                 }
             }
 
@@ -74,6 +88,10 @@
 
 
 <body>
+
+    <header>
+
+    </header>
     <div class="container-fluid">
 
         <div class="row p-3 text-center">
