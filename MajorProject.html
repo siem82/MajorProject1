@@ -43,10 +43,16 @@
             border: 0;
         }
 
+
         @media screen and (max-width: 576px){
                 .texthide{
                     font-size: 0;
                 }
+
+                .btn:hover + .texthide{
+                    font-size: small;
+                    font-display: block;
+                 }
             }
 
             @media screen and (min-width: 768px) and (max-width: 1024px){
