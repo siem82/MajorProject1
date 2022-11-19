@@ -78,7 +78,7 @@
         @media screen and (max-width: 767px){
 
                 header{
-                    height: 30vh;
+                    overflow: scroll;
                 }
 
                 .texthide{
@@ -86,8 +86,8 @@
                 }
 
                 .btn:hover + .texthide{
-                    font-size: small;
-                    font-display: block;
+                    font-size: x-small;
+                    display: block;
                  }
 
                  .signupbutton{
@@ -101,7 +101,7 @@
                  }
 
                  h1{
-                    margin-top: 5px;
+                    margin-top: 50px;
                     margin-left: 120px;
                     font-size: 20px;
                  }
@@ -126,12 +126,12 @@
                 }
 
                 .btn:hover + .texthide{
-                    font-size: small;
-                    font-display: block;
+                    font-size: medium;
+                    display: block;
                  }
 
                 header{
-                    height: 50vh;
+                    overflow: scroll;
                 }
 
                 .signupbutton{
@@ -145,6 +145,16 @@
 
                 h4{
                     margin-left: 130px;
+                }
+            }
+
+            @media screen and (min-width: 950px) and (max-width: 1280px){
+                h1{
+                    margin-left: 400px;
+                }
+
+                h4{
+                    margin-left: 350px;
                 }
             }
 
@@ -188,18 +198,18 @@
     
     
             <div class="col text-center">
-                <a type="button" class="btn btn-outline-dark fa fa-home" style="color: #246563;" id="home" href="form.html"></a>
+                <button type="button" class="btn btn-outline-dark fa fa-home" style="color: #246563;" id="home" href=""></button>
                 <label for="home" class="texthide" aria-hidden="true" href=""> Home</label>
             </div>
     
             <div class="col">
-                <a type="button" class="btn btn-outline-dark fa fa-heart" style="color: #246563;" id="Top" href=" "></a>
+                <button type="button" class="btn btn-outline-dark fa fa-heart" style="color: #246563;" id="Top" href=" "></button>
                 <label for="Top" class="texthide" aria-hidden="true" href=""> Top Stars</label>
     
             </div>
     
             <div class="col">
-                <a type="button" class="btn btn-outline-dark fa fa-users" style="color: #246563;" id="following" href=" "></a>
+                <button type="button" class="btn btn-outline-dark fa fa-users" style="color: #246563;" id="following" href=" "></button>
                 <label for="following" class="texthide" aria-hidden="true" href=""> Following</label>
             </div>
 
