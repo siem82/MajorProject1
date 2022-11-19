@@ -39,6 +39,16 @@
             height: 100vh;
         }
 
+        .btn{
+            border: 0;
+        }
+
+        @media screen and (max-width: 576px){
+                .texthide{
+                    font-size: 0;
+                }
+            }
+
         
 
     
@@ -74,20 +84,24 @@
     
     
             <div class="col">
-                <a class="fa fa-home fw-bold" aria-hidden="true" href=""> Home</a>
+                <button type="button" class="btn btn-outline-dark fa fa-home" href=" "></button>
+                <a class="texthide" aria-hidden="true" href=""> Home</a>
             </div>
     
             <div class="col">
-                <a class="fa fa-home" aria-hidden="true" href=""> Top Liked Recipes</a>
+                <button type="button" class="btn btn-outline-dark fa fa-home" href=" "></button>
+                <a class="texthide" aria-hidden="true" href=""> Top Liked Recipes</a>
     
             </div>
     
             <div class="col">
-                <a class="fa fa-home" aria-hidden="true" href=""> Following</a>
+                <button type="button" class="btn btn-outline-dark fa fa-home" href=" "></button>
+                <a class="texthide" aria-hidden="true" href=""> Following</a>
             </div>
     
             <div class="col">
-                <a class="fa fa-home" aria-hidden="true" href=""> Profile</a>
+                <button type="button" class="btn btn-outline-dark fa fa-home" href=" "></button>
+                <a class="texthide" aria-hidden="true" href=""> Profile</a>
     
             </div>
         </div>
