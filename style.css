@@ -19,3 +19,11 @@ body{
 
 }
 
+.btn{
+    border: none;
+}
+
+.homestyle{
+    display: flex;
+}
+
