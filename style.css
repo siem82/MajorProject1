@@ -32,6 +32,10 @@ aside{
     
  }
 
+ .usernamecaption{
+    font-style: italic;
+ }
+
 
 
 @media screen and (min-width: 375px) and (max-width: 767px){
@@ -69,6 +73,13 @@ aside{
         margin-top: 5px;
         margin-left: 60px;
         font-size: 10px;
+     }
+     .sidebar{
+        display: none;
+     }
+
+     .card-text{
+        display: none;
      }
 
 
