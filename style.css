@@ -27,3 +27,88 @@ body{
     display: flex;
 }
 
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+
+    header{
+        overflow: scroll;
+    }
+
+    .texthide{
+        font-size: 0;
+    }
+
+    .btn:hover + .texthide{
+        font-size: x-small;
+        display: block;
+     }
+
+     .signupbutton{
+        
+        font-size: 8px;
+
+     }
+
+     .btn{
+        font-size: 8px;
+     }
+
+     h1{
+        margin-top: 50px;
+        margin-left: 120px;
+        font-size: 20px;
+     }
+
+     h4{
+        margin-top: 5px;
+        margin-left: 60px;
+        font-size: 10px;
+     }
+
+     
+
+    
+     
+   
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .texthide{
+        font-size: 0;
+    }
+
+    .btn:hover + .texthide{
+        font-size: medium;
+        display: block;
+     }
+
+    header{
+        overflow: scroll;
+    }
+
+    .signupbutton{
+        font-size: 10px;
+    }
+
+    h1{
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+
+    h4{
+        margin-left: 130px;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1280px){
+    h1{
+        margin-left: 400px;
+    }
+
+    h4{
+        margin-left: 350px;
+    }
+}
+
+
