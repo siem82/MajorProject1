@@ -2,11 +2,6 @@ body{
     font-family: "Mulish", sans-serif;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    
-}
 
 .hide{
     display: none;
@@ -40,7 +35,14 @@ aside{
 .menucaption{
     font-family: "Merienda", sans-serif;
     letter-spacing: 3px;
+
 }
+
+.card-title{
+    font-weight: bold;
+ }
+
+
 
 
 
@@ -84,10 +86,15 @@ aside{
         display: none;
      }
 
-     .card-text{
+     .menucaption{
+        font-size: x-small;
+     }
+
+     .cakeimg{
         display: none;
      }
-     .menucaption{
+
+     .timer{
         font-size: x-small;
      }
 
