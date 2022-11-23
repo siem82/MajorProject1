@@ -10,6 +10,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+    @media screen and (min-width: 375px) and (max-width: 767px){
+
+
+        .card-text{
+            font-size: 12px;
+            width: 200px;
+
+        }
+
+        .buttons{
+            white-space: wrap;
+            }
+        .usernamecaption{
+            font-size: 12px;
+        }
+    
+}
+
+    
+    </style>
 </head>
 <body>
 
@@ -17,12 +39,12 @@
 
         <div class="row">
 
-            <aside class="col-3 mt-5">
-                <img class="profile col-6 p-3 " src="https://cdn-icons-png.flaticon.com/512/219/219969.png">
+            <aside class="col-3 mt-3">
+                <img class="col p-3 " id="profile" src="https://cdn-icons-png.flaticon.com/512/219/219969.png">
 
             </aside>
 
-            <nav class="centerdiv col-6 mt-5 border border-1">
+            <nav class="centerdiv col-9 mt-3 border border-1 ">
 
                  <div class="row p-3 text-center border-bottom">
                             
@@ -41,20 +63,20 @@
                     
                     
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-dark fa fa-home" style="color: #246563;" id="home" href=" "></button>
-                                <label for="home" class="texthide" aria-hidden="true" href="homepage.html">Home</label>
+                                <a type="button" class="btn btn-outline-dark fa fa-home" style="color: #246563;" id="home" href="homepage.html"></a>
+                                <label for="home" class="texthide" aria-hidden="true"><strong>Home</strong></label>
                     
                             </div>
                     
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-dark fa fa-heart" style="color: #246563;" id="Top" href=" "></button>
-                                <label for="Top" class="texthide" aria-hidden="true" href=""> Top Liked</label>
+                                <a type="button" class="btn btn-outline-dark fa fa-heart" style="color: #246563;" id="Top" href="toplikes.html"></a>
+                                <label for="Top" class="texthide" aria-hidden="true"> Top Liked</label>
                     
                             </div>
                     
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-dark fa fa-users" style="color: #246563;" id="following" href=" "></button>
-                                <label for="following" class="texthide" aria-hidden="true" href=""> Following</label>
+                                <a type="button" class="btn btn-outline-dark fa fa-users" style="color: #246563;" id="following" href=" "></a>
+                                <label for="following" class="texthide" aria-hidden="true"> Following</label>
                             </div>
 
                         
@@ -64,14 +86,17 @@
 
                         <div class="content container-fluid"> 
                             <div class="row">
-                                <div class="col-12 card m-3 p-3" style="width: 18rem;">
+                                <div class="col-12 card mt-3 p-3" style="width: 18rem;">
                                     <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@ChefConnie</strong></i>
-                                    <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="cakerecipe.html" class="btn btn-primary" style="float: right;">View Recipe</a>
-                                    <div class="buttons ">
+                                    <i class="usernamecaption"><strong>@ChefConnie</strong></i>
+                                    <button type="button" class="btn">
+                                        <span class="badge badge-primary rounded-pill">Follow+</span>
+                                       </button>
+                                    <p class="card-text text-wrap m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="cakerecipe.html" class="btn btn-primary" style="float: right;">View Recipe</a><br>
+                                    <div class="buttons">
                                         <button type="button" class="btn btn-outline-primary fa fa-thumbs-o-up m-3 " >1.3k</button>
                                         <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3">1k</button>
                                         <button type="button" class="btn btn-outline-success fa fa-share m-3">300</button>
@@ -81,11 +106,15 @@
                             </div>
 
                             <div class="row">
-                                <div class=" col-12 card m-3 p-3" style="width: 18rem;">
+                                <div class=" col-12 card mt-3 p-3" style="width: 18rem;">
                                     <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@Stacey</strong></i>
+                                    <i class="usernamecaption"><strong>@Stacey</strong></i>
+                                    <button type="button" class="btn btn-outline-success">
+                                        following
+                                       </button>
+                                       <i class="fa fa-check-circle" style="color: green;"></i>
                                     <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="pancake.html" class="btn btn-primary" style="float: right;">View Recipe</a>
                                     <div class="buttons ">
@@ -98,11 +127,14 @@
                             </div>
 
                             <div class="row">
-                                <div class=" col-12 card m-3 p-3" style="width: 18rem;">
-                                    <img src="https://images.pexels.com/photos/8477963/pexels-photo-8477963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                                <div class=" col-12 card mt-3 p-3" style="width: 18rem;">
+                                    <img src="https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@username</strong></i>
+                                    <i class="usernamecaption"><strong>@ChefNieves</strong></i>
+                                    <button type="button" class="btn">
+                                        <span class="badge badge-primary rounded-pill">Follow+</span>
+                                       </button>
                                     <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="#" class="btn btn-primary" style="float: right;">View Recipe</a>
                                     <div class="buttons ">
@@ -115,11 +147,15 @@
                             </div>
 
                             <div class="row">
-                                <div class=" col-12 card m-3 p-3" style="width: 18rem;">
+                                <div class=" col-12 card mt-3 p-3" style="width: 18rem;">
                                     <img src="https://images.pexels.com/photos/1482803/pexels-photo-1482803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@username</strong></i>
+                                    <i class="usernamecaption"><strong>@ChefMin</strong></i>
+                                    <button type="button" class="btn btn-outline-success">
+                                        following
+                                       </button>
+                                       <i class="fa fa-check-circle" style="color: green;"></i>
                                     <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="#" class="btn btn-primary" style="float: right;">View Recipe</a>
                                     <div class="buttons ">
@@ -132,11 +168,15 @@
                             </div>
 
                             <div class="row">
-                                <div class=" col-12 card m-3 p-3" style="width: 18rem;">
+                                <div class=" col-12 card mt-3 p-3" style="width: 18rem;">
                                     <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@username</strong></i>
+                                    <i class="usernamecaption"><strong>@Valeria</strong></i>
+                                    <button type="button" class="btn btn-outline-success">
+                                        following
+                                       </button>
+                                       <i class="fa fa-check-circle" style="color: green;"></i>
                                     <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="#" class="btn btn-primary" style="float: right;">View Recipe</a>
                                     <div class="buttons ">
@@ -156,9 +196,7 @@
                    
                 </nav>
 
-            <div class="sidebar col-3 mt-5">
-                    this is the side bar
-            </div>
+        
          </div>
          
          
