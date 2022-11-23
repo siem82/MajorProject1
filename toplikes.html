@@ -5,11 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+    @media screen and (min-width: 375px) and (max-width: 767px){
+
+
+        .card-text{
+            font-size: 10px;
+            width: 150px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+        }
+
+        .buttons{
+            white-space: wrap;
+            }
+        .usernamecaption{
+            font-size: 12px;
+        }
+
+        .profilecontent{
+            font-size: 12px;
+        }
+
+        .side{
+            margin-top: -100px;
+        }
+
+
+        .centerdiv{
+            width: 270px;
+        }
+
+        .number{
+            display: none;
+
+        }
+
+        .asidecontent{
+            display: none;
+        }
+
+        .name{
+            font-size: 15px;
+            margin-top: -50px;
+            text-align:start;
+        }
+
+        .list-group{
+            font-size: 7px;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .centerdiv{
+        width: 550px;
+    }
+}
+
+    </style>
 </head>
 <body>
 
@@ -17,12 +82,58 @@
 
         <div class="row">
 
-            <aside class="col-3 mt-5">
-                <img class="profile col-6 p-3 " src="https://cdn-icons-png.flaticon.com/512/219/219969.png">
+            <aside class="col-3 mt-3">
+
+                <div class="profilecontent row text-white border border-bottom">
+                    <div class="col-4">
+                        <img class=" p-3 mt-3 " style="height: 100px;" src="https://cdn-icons-png.flaticon.com/512/219/219969.png">
+                    </div>
+                    <div class=" col mt-5">
+                        <p class="number text-center">0</p>
+                        <p class="asidecontent">Recipes</p>
+                    </div>
+
+                    <div class=" col mt-5">
+                        <p class="number text-center">0</p>
+                        <p class="asidecontent">Followers</p>
+                    </div>
+
+                    <div class=" col mt-5">
+                        <p class="number text-center">312</p>
+                        <p class="asidecontent">Following</p>
+                    </div>
+
+                    <a class="name h5 ms-4 font-weight-bold text-white mb-3" href="myaccount.html">Charlene Lopez</a>
+
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group mt-5">
+                            
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                              SAVED RECIPES
+                              <span class="badge bg-primary rounded-pill">14</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                              FOLLOW REQUESTS
+                              <span class="badge bg-primary rounded-pill">2</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                              POPULAR RECIPES
+                              <span class="badge bg-primary rounded-pill">1</span>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                
+                
+                
 
             </aside>
 
-            <nav class="centerdiv col-6 mt-5 border border-1">
+            <nav class="centerdiv col-7 mt-3 border border-1 ">
 
                  <div class="row p-3 text-center border-bottom">
                             
@@ -41,19 +152,19 @@
                     
                     
                             <div class="col-4">
-                                <a type="button" class="btn fa fa-home" style="color: #246563;" id="home" href="homepage.html"></a>
+                                <a type="button" class="btn btn-outline-dark fa fa-home" style="color: #246563;" id="home" href="homepage.html"></a>
                                 <label for="home" class="texthide" aria-hidden="true">Home</label>
                     
                             </div>
                     
                             <div class="col-4">
-                                <a type="button" class="btn fa fa-heart" style="color: #246563;" id="Top" href="toplikes.html"></a>
-                                <label for="Top" class="texthide" aria-hidden="true"> <strong>Top Liked</strong></label>
+                                <a type="button" class="btn btn-outline-dark fa fa-heart" style="color: #246563;" id="Top" href="toplikes.html"></a>
+                                <label for="Top" class="texthide" aria-hidden="true"><strong>Top Liked</strong> </label>
                     
                             </div>
                     
                             <div class="col-4">
-                                <a type="button" class="btn btn-outline-dark fa fa-users" style="color: #246563;" id="following" href="following.html"></a>
+                                <a type="button" class="btn btn-outline-dark fa fa-users" style="color: #246563;" id="following" href=" "></a>
                                 <label for="following" class="texthide" aria-hidden="true"> Following</label>
                             </div>
 
@@ -64,85 +175,153 @@
 
                         <div class="content container-fluid"> 
                             <div class="row">
-                                <div class="col-12 card m-3 p-3" style="width: 18rem;">
+                                <div class="col card mt-3 p-3" style="width: 18rem;">
                                     <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@ChefConnie</strong></i>
-                                    <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="cakerecipe.html" class="btn btn-primary" style="float: right;">View Recipe</a>
-                                    <div class="buttons ">
-                                        <button type="button" class="btn btn-outline-primary fa fa-thumbs-o-up m-3 " >1.3k</button>
-                                        <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3">1k</button>
-                                        <button type="button" class="btn btn-outline-success fa fa-share m-3">300</button>
+                                    <a class="usernamecaption text-dark" href="userpage.html"><strong>@ChefConnie</strong></a>
+                                    <button type="button" class="btn btn-primary btn-sm rounded-pill">
+                                        <span class="badge badge-primary rounded-pill">Follow+</span>
+                                       </button>
+                                    <p class="card-text m-3 px-4">An easy to make, rich Chocolate Cake is the most craved cake recipe. One bowl, minimal ingredients - a fluffy, tender-moist chocolate cake!</p>
+                                    <a href="cakerecipe.html" class="btn btn-primary" style="float: right;">View Recipe</a><br>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-4">
+                                            
+                                                <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3 " >100k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-primary fa fa-bookmark-o m-3">20k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-success fa fa-share m-3">2k</button>
+                                            </div>
+                                            
+                                    </div>
                                     </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class=" col-12 card m-3 p-3" style="width: 18rem;">
+                                <div class=" col card mt-3 p-3" style="width: 18rem;">
                                     <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@Stacey</strong></i>
-                                    <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="pancake.html" class="btn btn-primary" style="float: right;">View Recipe</a>
-                                    <div class="buttons ">
-                                        <button type="button" class="btn btn-outline-primary fa fa-thumbs-o-up m-3 " >1.3k</button>
-                                        <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3">1k</button>
-                                        <button type="button" class="btn btn-outline-success fa fa-share m-3">300</button>
+                                    <i class="usernamecaption"><strong>@Stacey</strong></i>
+                                    <button type="button" class="btn btn-outline-success">
+                                        following
+                                       </button>
+                                       <i class="fa fa-check-circle" style="color: green;"></i>
+                                    <p class="card-text m-3 px-4">We love pancakes in our house, these strawberry pancakes are based on an easy fluffy vanilla pancake recipe made from everyday ingredients but with delicious pops of fresh strawberry in every bite!</p>
+                                    <a href="pancake.html" class="btn btn-primary" style="float: right;">View Recipe</a><br>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-4">
+                                            
+                                                <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3 " >100k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-primary fa fa-bookmark-o m-3">20k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-success fa fa-share m-3">2k</button>
+                                            </div>
+                                            
+                                    </div>
                                     </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class=" col-12 card m-3 p-3" style="width: 18rem;">
-                                    <img src="https://images.pexels.com/photos/8477963/pexels-photo-8477963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                                <div class=" col card mt-3 p-3" style="width: 18rem;">
+                                    <img src="https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@username</strong></i>
+                                    <i class="usernamecaption"><strong>@ChefNieves</strong></i>
+                                    <button type="button" class="btn btn-primary btn-sm rounded-pill">
+                                        <span class="badge badge-primary rounded-pill">Follow+</span>
+                                       </button>
                                     <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary" style="float: right;">View Recipe</a>
-                                    <div class="buttons ">
-                                        <button type="button" class="btn btn-outline-primary fa fa-thumbs-o-up m-3 " >1.3k</button>
-                                        <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3">1k</button>
-                                        <button type="button" class="btn btn-outline-success fa fa-share m-3">300</button>
+                                    <a href="#" class="btn btn-primary" style="float: right;">View Recipe</a><br>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-4">
+                                            
+                                                <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3 " >100k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-primary fa fa-bookmark-o m-3">20k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-success fa fa-share m-3">2k</button>
+                                            </div>
+                                            
+                                    </div>
                                     </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class=" col-12 card m-3 p-3" style="width: 18rem;">
+                                <div class=" col card mt-3 p-3" style="width: 18rem;">
                                     <img src="https://images.pexels.com/photos/1482803/pexels-photo-1482803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@username</strong></i>
+                                    <i class="usernamecaption"><strong>@ChefMin</strong></i>
+                                    <button type="button" class="btn btn-outline-success">
+                                        following
+                                       </button>
+                                       <i class="fa fa-check-circle" style="color: green;"></i>
                                     <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary" style="float: right;">View Recipe</a>
-                                    <div class="buttons ">
-                                        <button type="button" class="btn btn-outline-primary fa fa-thumbs-o-up m-3 " >1.3k</button>
-                                        <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3">1k</button>
-                                        <button type="button" class="btn btn-outline-success fa fa-share m-3">300</button>
+                                    <a href="#" class="btn btn-primary" style="float: right;">View Recipe</a><br>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-4">
+                                            
+                                                <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3 " >100k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-primary fa fa-bookmark-o m-3">20k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-success fa fa-share m-3">2k</button>
+                                            </div>
+                                            
+                                    </div>
                                     </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class=" col-12 card m-3 p-3" style="width: 18rem;">
+                                <div class=" col card mt-3 p-3" style="width: 18rem;">
                                     <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <i class="fa fa-user border border-1 rounded-circle py-1 px-2"></i>
-                                    <i class="usernamecption"><strong>@username</strong></i>
+                                    <i class="usernamecaption"><strong>@Valeria</strong></i>
+                                    <button type="button" class="btn btn-outline-success">
+                                        following
+                                       </button>
+                                       <i class="fa fa-check-circle" style="color: green;"></i>
                                     <p class="card-text m-3 px-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary" style="float: right;">View Recipe</a>
-                                    <div class="buttons ">
-                                        <button type="button" class="btn btn-outline-primary fa fa-thumbs-o-up m-3 " >1.3k</button>
-                                        <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3">1k</button>
-                                        <button type="button" class="btn btn-outline-success fa fa-share m-3">300</button>
+                                    <a href="#" class="btn btn-primary" style="float: right;">View Recipe</a><br>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-4">
+                                            
+                                                <button type="button" class="btn btn-outline-danger fa fa-heart-o m-3 " >100k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-primary fa fa-bookmark-o m-3">20k</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-outline-success fa fa-share m-3">2k</button>
+                                            </div>
+                                            
+                                    </div>
                                     </div>
                                     </div>
                                 </div>
@@ -155,13 +334,97 @@
                           </div>
                    
                 </nav>
+                <div class="sidebar col-2 mt-3 bg-light border border-1">
+                    <div class="container">
+                        <p class="p-3 border-bottom text-center"><strong>Featured Chefs:</strong></p>
 
-            <div class="sidebar col-3 mt-5">
-                    this is the side bar
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="https://images.summitmedia-digital.com/esquiremagph/images/2022/02/10/FUJI0437%20(1).jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h6 class="card-title">Ninong Ry</h6>
+                                  <p class="text-muted" style="font-size: 12px;">1.2M Followers</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="https://files.thehandbook.com/uploads/2021/02/aauvwni8kndtxpysrvmshcoqntvqvviyzdc38bjwmk6nuws800-c-k-c0x00ffffff-no-rj.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-title" style="font-size: 12px;">Erwan Heussaff</p>
+                                  <p class="text-muted" style="font-size: 12px;">500k Followers</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="https://i.pinimg.com/736x/8e/72/2d/8e722d3e26f9badd65bc38d0dfdeb136.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h6 class="card-title" style="font-size: 12px;">Panlasang Pinoy</h6>
+                                  <p class="text-muted" style="font-size: 12px;">838k Followers</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        
+                    </div>
             </div>
+        
          </div>
          
          
     </main>
 </body>
+
+<footer>
+
+    <div class="container p-3 ">
+    
+            <div class="row text-center mt-5 ">   
+            
+
+                    
+                    <div class="col-4 pe-2 ms-3 text-start">
+                        <h3><strong>Stay Connected</strong></h3>
+                        <div class="input-group mb-3 mt-3 p-1 border border-opacity-25 rounded-pill">
+                            <input type="text" class="form-control rounded-pill border border-0 pe-3" placeholder="Enter your Email" aria-label="Enter your Email" >                
+                            <button class="btn btn-danger text-white rounded-pill" type="button">Sign Up</button>
+                                        
+                        </div>
+
+                    
+                </div>
+            </div>
+
+            <div class="logos mt-4 mb-5 text-center">
+                <i class="fa fa-facebook ms-5 pt-2" style="font-size: 30px; color: rgb(210, 105, 66);" aria-hidden="true"></i>
+                <span class="fa fa-instagram ms-5 pt-2" style="font-size: 30px; color: rgb(210, 105, 66);" aria-hidden="true"></span>
+                <span class="fa fa-twitter ms-5 pt-2" style="font-size: 30px; color: rgb(210, 105, 66);" aria-hidden="true"></span>
+                <span class="fa fa-google-plus ms-5 pt-2" style="font-size: 30px; color: rgb(210, 105, 66);" aria-hidden="true"></span>
+            </div>
+
+            <hr>
+            <p class="text-center">Copyright © 2022 All rights reserve</p>
+
+        
+        
+    
+    </div>
+</footer>
 </html>
